@@ -15,7 +15,7 @@ class AppWidget extends StatelessWidget {
       child: ScreenUtilInit(
         builder: () {
           return GetMaterialApp(
-            title: 'Clube ASC',
+            title: 'Code Base With GetX',
             theme: AppTheme.lightTheme,
             debugShowCheckedModeBanner: false,
             defaultTransition: Transition.leftToRightWithFade,
