@@ -19,7 +19,6 @@ abstract class AppTheme {
   static ThemeData lightTheme = ThemeData(
     brightness: brightness,
     primaryColor: AppColors.primaryColor,
-    accentColor: AppColors.accentColor,
     scaffoldBackgroundColor: AppColors.lightColor,
     splashColor: Colors.transparent,
     highlightColor: Colors.transparent,
@@ -33,10 +32,8 @@ abstract class AppTheme {
       onSecondary: AppColors.accentColor,
       onSurface: AppColors.accentColor,
       primary: AppColors.primaryColor,
-      primaryVariant: AppColors.primaryColor,
       secondary: AppColors.accentColor,
-      secondaryVariant: AppColors.accentColor,
       surface: AppColors.lightColor,
-    ),
+    ).copyWith(secondary: AppColors.accentColor),
   );
 }
